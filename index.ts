@@ -15,7 +15,7 @@ type Product = {
   discount:number,
   reviewCount:number
 }
-/*
+
 //Map
 const nameProducts = products.map(product => product.name)
 console.log(`nameProducts:` + nameProducts)
@@ -89,7 +89,7 @@ if (hasZeroQuantity.length > 0) {
 
 //Task 12
 const sumAllReviewCountProducts = products.reduce((sum, product) => sum + product.reviewCount, 0)
-console.log(`sumAllReviewCountProducts`,sumAllReviewCountProducts) */
+console.log(`sumAllReviewCountProducts`,sumAllReviewCountProducts) 
 
 //Task 13
 type ProductCategory  = {
@@ -101,5 +101,23 @@ const dataProductCategory: ProductCategory[] = products.map(product => {
     };
 })
 
-const uniqCategory = [...new Set(products.map(product => product.category))];
+const uniqCategory = [...new Set(products.map(product => product.category))]
 console.log(`uniqCategory:`, uniqCategory)
+
+//Task 14
+const longestDescription = products.reduce((max, product) => max.description.length > product.description.length? max : product)
+console.log(`malongestDescriptionPriceProduct:`,longestDescription.description)
+
+//Task 15
+const carEngine : Product= {
+  id:13,
+  name:"Engine 1.8t",
+  description:"Cool engine for your car",
+  category:"Car Parts",
+  price:134.3,
+  quantity:12,
+  discount:20,
+  reviewCount:9
+}
+products.push(carEngine)
+console.log(products[12])

@@ -1,41 +1,13 @@
-# Prerequisites
-*.d
+# dependencies
+/node_modules
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# testing
+/coverage
 
-# Precompiled Headers
-*.gch
-*.pch
+# production
+/build
 
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-# debug information files
-*.dwo
+# misc
+.DS_Store
+.env
+npm-debug.log
